@@ -1,4 +1,4 @@
-//生命周期log
+//修改data中的数据引起界面渲染
 
 <template>
   <div>
