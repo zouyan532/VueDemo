@@ -5,7 +5,7 @@
       <wv-button type="primary"  @click="nativateTo(1)">修改data中的数据引起界面渲染</wv-button>
       <wv-button type="primary"  @click="nativateTo(2)">Vue指令</wv-button>
       <wv-button type="primary"  @click="nativateTo(3)">computed 和 watch</wv-button>
-      <wv-button type="primary"  @click="nativateTo(4)">页面主要操作 Normal</wv-button>
+      <wv-button type="primary"  @click="nativateTo(4)">路由传参</wv-button>
     </div>
   </div>
 </template>
@@ -33,6 +33,9 @@ export default {
           break
         case 3:
           routeName = "ComputedAndWatch"
+          break
+        case 4:
+          routeName = "RouterPageA"
           break
       }
       this.$router.push({

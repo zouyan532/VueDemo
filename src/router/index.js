@@ -5,6 +5,8 @@ import LifeLog from '@/components/LifeLog'
 import ChangeData from '@/components/ChangeData'
 import VueCmd from '@/components/VueCmd'
 import ComputedAndWatch from '@/components/ComputedAndWatch'
+import RouterPageA from '@/components/RouterPageA'
+import RouterPageB from '@/components/RouterPageB'
 Vue.use(Router)
 
 export default new Router({
@@ -28,6 +30,16 @@ export default new Router({
     {
       path: '/ComputedAndWatch',
       component: ComputedAndWatch
+    },
+    {
+      path: '/RouterPageA',
+      name:"RouterPageA",
+      component: RouterPageA
+    },
+    {
+      name:"RouterPageB",
+      path: '/RouterPageB',
+      component: RouterPageB
     },
   ]
 })
